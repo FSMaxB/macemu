@@ -741,7 +741,7 @@ static int16 VideoStatus(uint32 pb, VidLocals *csSave)
 				case kDisplayModeIDCurrent:
 					work_id = csSave->saveData;
 					break;
-				case kDisplayModeIDFindFirstResolution:
+				case (int)kDisplayModeIDFindFirstResolution:
 					work_id = APPLE_ID_MIN;
 					while (!has_mode(work_id))
 						work_id ++;
